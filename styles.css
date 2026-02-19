@@ -81,3 +81,21 @@ textarea{resize:vertical}
     display: none;
   }
 }
+/* FORCE the header to scroll with the page (disable sticky/fixed) */
+header,
+.site-header,
+.topbar,
+.sticky,
+.stickyHeader,
+.navbar {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+
+/* If anything is using sticky via a wrapper, disable it too */
+[class*="sticky"],
+[id*="sticky"] {
+  position: static !important;
+  top: auto !important;
+}
