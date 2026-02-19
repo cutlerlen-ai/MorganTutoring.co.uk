@@ -115,4 +115,10 @@ header,
 [id*="sticky"] {
   position: static !important;
   top: auto !important;
+}/* Make hero text span wider across the blue section */
+.hero h1,
+.hero p,
+.hero .lead {
+  max-width: none !important;
+  width: 100%;
 }
