@@ -98,4 +98,21 @@ header,
 [id*="sticky"] {
   position: static !important;
   top: auto !important;
+}/* Disable any sticky/fixed header so it scrolls with the page */
+header,
+.site-header,
+.topbar,
+.navbar,
+.header,
+.sticky,
+.stickyHeader {
+  position: static !important;
+  top: auto !important;
+}
+
+/* If a wrapper is being made sticky */
+[class*="sticky"],
+[id*="sticky"] {
+  position: static !important;
+  top: auto !important;
 }
