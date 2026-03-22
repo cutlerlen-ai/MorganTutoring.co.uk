@@ -122,3 +122,100 @@ header,
   max-width: none !important;
   width: 100%;
 }
+/* ======================================
+   MOBILE FIXES FOR MORGAN TUTORING
+   ====================================== */
+
+@media (max-width: 700px) {
+
+  /* Shrink giant header logo */
+  header .logo {
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto;
+  }
+
+  /* Stack brand text properly */
+  .brand h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .brand p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* Navigation: stack vertically + centre */
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  /* Reduce topbar space so header doesn't feel huge */
+  .topbar {
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  /* Hero section readability */
+  .hero {
+    padding: 20px 0;
+  }
+
+  .hero .hTitle {
+    font-size: 24px;
+  }
+
+  .hero .lead {
+    font-size: 15px;
+  }
+
+  /* Fix hero image sizing */
+  .heroImg {
+    height: auto !important;
+    max-height: 240px;
+  }
+
+  /* Better spacing for cards/sections */
+  .section {
+    padding: 16px 0;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  /* Grid collapses to single column */
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact form fields */
+  form .row2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer spacing */
+  .footer .grid2 {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .footer img.logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+}
